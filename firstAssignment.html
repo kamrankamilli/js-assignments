@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Current Day and Time</title>
+  </head>
+  <body>
+    <script>
+      var day = new Date();
+      var weekdays = Array(
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      );
+      document.write("Today is: " + weekdays[day.getDay() - 1]);
+      document.write(" Current time is: " + day.toLocaleTimeString());
+    </script>
+  </body>
+</html>
